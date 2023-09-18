@@ -1,0 +1,485 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: rgb(248, 248, 248);
+    color: #000;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #C62828;
+}
+
+header {
+    background-color: rgb(248, 248, 248);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 12%;
+    transition: all 0.5s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+    color: #C62828;
+}
+
+.logo :hover {
+    color: #C62828;
+}
+
+.navbar a.active {
+    color: #C62828;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.main a:hover {
+    color: #C62828;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: #000;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.titulo3 {
+    color: #fff;
+    font-size: 70px;
+    width: 40%;
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    padding-left: 100px;
+    height: 200px;
+    width: 100%;
+    background-color: #C62828;
+}
+
+.column {
+    margin-top: 20px;
+    margin-right: 50px;
+    color: gray;
+}
+
+.cont-img {
+    width: 100%;
+    height: 600px;
+    background-image: url('Logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.proyecto {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+.proyecto p {
+    text-align: justify;
+}
+
+.proyecto2 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-color: #C62828;
+    color: white;
+    padding: 50px 10%;
+}
+
+.proyecto2 p {
+    text-align: justify;
+}
+
+/* Estilo para los divs */
+.contenedores {
+    margin-top: 200px;
+    display: flex;
+    /* Utilizamos flexbox para alinear los divs */
+}
+
+.div1,
+.div2 {
+    width: 50%;
+    /* Asignamos un ancho del 50% para que ocupen la mitad del contenedor */
+    padding: 20px;
+    /* Añadimos un espacio de relleno para separar los contenidos */
+}
+
+.div1 {
+    margin-top: 50px;
+}
+
+.form {
+    height: 30px;
+    width: 95%;
+    margin-top: 10px;
+    color: black;
+    background-color: transparent;
+    border: solid 1px #C62828;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.contact {
+    background-color: #C62828;
+    border-radius: 5px;
+    height: 75px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 300px;
+}
+
+#Mensaje {
+    height: 100px;
+}
+
+.contactameBtn {
+    height: 50px;
+    width: 95%;
+    border: 0px solid;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #C62828;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form:focus {
+    background-color: #C62828;
+    border: solid 0px white;
+}
+.scroll-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin: 15px;
+  }
+
+  .scroll-content {
+    display: inline-block;
+  }
+
+  .scroll-content img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+  }
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: 0.2s;
+    }
+
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+
+    /* Ajustar el tamaño del título del footer */
+    .titulo3 {
+        font-size: 40px;
+        width: auto;
+    }
+
+    /* Estilos para el footer responsivo */
+    .footer {
+        display: block;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .column {
+        margin: 10px;
+        /* Ajusta el margen entre columnas según tus necesidades */
+    }
+
+    /* Estilo para los divs */
+    .contenedores {
+        margin-top: 50px;
+        display: block;
+        /* Utilizamos flexbox para alinear los divs */
+    }
+
+    .div1,
+    .div2 {
+        width: 50%;
+        /* Asignamos un ancho del 50% para que ocupen la mitad del contenedor */
+        padding: 20px 0;
+        /* Añadimos un espacio de relleno para separar los contenidos */
+    }
+
+    .div1 {
+        margin-top: 50px;
+    }
+
+    .div1 p {
+        width: 300px;
+        text-align: justify;
+    }
+
+    .form {
+        height: 30px;
+        width: 310px;
+        margin-top: 10px;
+        color: gray;
+        background-color: transparent;
+        border: solid 1px #C62828;
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    .contact {
+        background-color: #C62828;
+        border-radius: 5px;
+        height: 75px;
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        width: 300px;
+    }
+
+    #Mensaje {
+        height: 100px;
+    }
+
+    .contactameBtn {
+        height: 50px;
+        width: 330px;
+        border: 0px solid;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        background-color: #C62828;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .form:focus {
+        background-color: #C62828;
+        border: solid 0px white;
+    }
+}
+
+@media (max-width: 1090px) {
+    header {
+        padding: 14px 2%;
+        transition: 0.2s;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 350px;
+        background: #C62828;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar a:hover {
+        color: #000;
+        transform: translateY(5px);
+    }
+
+    .navbar a.active {
+        color: #000;
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    /* Ajustar el tamaño del título del footer */
+    .titulo3 {
+        font-size: 40px;
+        width: auto;
+    }
+
+    /* Estilos para el footer responsivo */
+    .footer {
+        display: block;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 350px;
+        text-align: center;
+    }
+
+    .column {
+        margin: 10px;
+        /* Ajusta el margen entre columnas según tus necesidades */
+    }
+
+    .cont-img {
+        width: 100%;
+        height: 80vh;
+        background-image: url('Background.png');
+        background-size: cover;
+
+    }
+
+    /* Estilo para los divs */
+    .contenedores {
+        margin-top: 50px;
+        display: block;
+        /* Utilizamos flexbox para alinear los divs */
+    }
+
+    .div1,
+    .div2 {
+        width: 50%;
+        /* Asignamos un ancho del 50% para que ocupen la mitad del contenedor */
+        padding: 20px;
+        /* Añadimos un espacio de relleno para separar los contenidos */
+    }
+
+    .div1 {
+        margin-top: 50px;
+    }
+
+    .div1 p {
+        width: 300px;
+        text-align: justify;
+    }
+
+    .form {
+        height: 30px;
+        width: 310px;
+        margin-top: 10px;
+        color: gray;
+        background-color: transparent;
+        border: solid 1px #C62828;
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    .contact {
+        background-color: #C62828;
+        border-radius: 5px;
+        height: 75px;
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        width: 300px;
+    }
+
+    #Mensaje {
+        height: 100px;
+    }
+
+    .contactameBtn {
+        height: 50px;
+        width: 310px;
+        border: 0px solid;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        background-color: #C62828;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .form:focus {
+        background-color: #C62828;
+    }
+}
